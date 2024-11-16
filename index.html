@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message for You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="container" id="welcome-screen">
+        <img src="heart.png" alt="Heart" class="heart-img">
+        <h1 class="animated-text">Hey, thank you for accepting my invitation! 🌸</h1>
+        <button id="continue-btn" onclick="showFlirting()">Continue</button>
+    </div>
+
+    <!-- Flirting Screen -->
+    <div class="container" id="flirt-screen" style="display: none;">
+        <h1 class="flirt-text">I may not be perfect, but I promise I'll keep getting better... just for you! 😉</h1>
+        <p>But seriously, I really think I could bring so much joy and laughter into your life. ❤️</p>
+        <button id="next-btn" onclick="showLoveQuestion()">Next</button>
+    </div>
+
+    <!-- Love Question Screen -->
+    <div class="container" id="love-screen" style="display: none;">
+        <h1>Hey, do you love me? 💖</h1>
+        <button id="yes-btn" onclick="showLoveAccepted()">Yes</button>
+        <button id="no-btn" onmouseover="moveNoButton()">No</button>
+    </div>
+
+    <!-- Final Screen -->
+    <div class="container" id="final-screen" style="display: none;">
+        <h1 class="animated-text">Thank you for accepting my love! 🥰</h1>
+        <p>You just made me the happiest person alive! ❤️</p>
+        <img src="thankyou.png" alt="Thank you" class="thank-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
